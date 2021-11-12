@@ -38,6 +38,7 @@ body {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    box-sizing: border-box;
 }
 .tour {
     height: 375px;
@@ -53,6 +54,7 @@ body {
     background-image: url(../img/tour_bg.png);
     background-repeat: no-repeat;
     background-size: cover;
+    box-sizing: border-box;
 }
 
 .tour div {
@@ -284,7 +286,7 @@ body {
 
 }
 
-@media handheld {
+@media (max-width: 980px) {
     
     .tour {
         
@@ -302,6 +304,10 @@ body {
 
     .tour {
         margin: 0;
+    }
+
+    .tours__list {
+        padding: 0;
     }
 
 }
