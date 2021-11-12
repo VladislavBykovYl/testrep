@@ -266,12 +266,11 @@ body {
     }
 }
 
-@media (max-width: 1058px) {
+@media handheld  {
     
     .tour {
         
         flex-basis: 90%;
-        max-width: 380px;
 
     }
 
