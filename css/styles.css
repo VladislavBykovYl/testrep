@@ -33,15 +33,15 @@ body {
     padding: 1em;
 
     display:flex;
-    flex-basis: 100%;
+    flex-basis: 98%;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
 .tour {
-    height: 380px;
-    width: 380px;;
+    height: 375px;
+    width: 375px;;
     margin: 10px;
     display:flex;
     align-items: flex-end;
@@ -266,11 +266,12 @@ body {
     }
 }
 
-@media handheld  {
+@media  (max-width: 1058px) {
     
     .tour {
         
         flex-basis: 90%;
+        max-width: 380px;
 
     }
 
@@ -279,6 +280,31 @@ body {
     }
     .footer__menu {
         display: none;
+    }
+
+}
+
+@media handheld {
+    
+    .tour {
+        
+        flex-basis: 90%;
+        max-width: 380px;
+
+    }
+
+    .footer__contacts {
+        display: none;
+    }
+    .footer__menu {
+        display: none;
+    }
+
+    .tour {
+        margin: 0;
+    }
+    .contacts__map {
+        width: 375px;
     }
 
 }
